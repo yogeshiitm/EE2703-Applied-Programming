@@ -5,54 +5,57 @@
         Name - Yogesh Agarwala
         Roll - EE19B130
 
-        To check the code run $python assign1_solution.py <inputfile>
+        To check the code run $python assignment1_ee19b130.py <inputfile>
 """
 
 
 from sys import argv, exit
 
 
-"""
-It's recommended to use constant variables than hard-coding them everywhere.
-For example, if you decide to change the command from '.circuit' to '.start' later,
-    you only need to change the constant
-"""
+# It's recommended to use constant variables than hard-coding them everywhere.
 CIRCUIT = '.circuit'
 END = '.end'
 
-# Checks if the number of arguments received is correct
+
+# Checks if the number of arguments received in commandline is correct
 if len(argv) != 2:
-    print('\nInvalid command, expected type: $python %s <inputfile>' % argv[0])
+    print('\nInvalid command, expected: $python %s <inputfile>' % argv[0])
     exit()
 
 
-"""
-The use might input a wrong file name by mistake.
-In this case, the open function will throw an IOError.
-Make sure you have taken care of it using try-catch
-"""
+# try-except is used to catch the error in case wrong filename is entered
 try:
     with open(argv[1]) as f:
+
+        # read the lines and then close the netlist file
         lines = f.readlines()
         f.close()
+
+
+        ##################################################################################################
+
+        # these values will be changed only if .ciruit and .end are found in the netlist file
         start = -1; end = -2
-        # extracting circuit defination between start and end lines
         for line in lines:
+            # finding the line whose first word is .circuit
             if CIRCUIT == line[:len(CIRCUIT)]:
                 start = lines.index(line)
+                line_number = start+1
+            # finding the line whose first word is .end
             elif END == line[:len(END)]:
                 end = lines.index(line)
                 break
-        
+
+
         # checking if netlist file contains .circuit and .end lines
         if start== -1 and end== -2:
-            print(f'Invalid circuit defination: {CIRCUIT} and {END} lines are missing')
+            print(f'Invalid circuit defination: {CIRCUIT} and {END} lines are missing in the netlist file')
             exit()
         elif start== -1:
-            print(f'Invalid circuit defination: {CIRCUIT} line is missing')
+            print(f'Invalid circuit defination: {CIRCUIT} line is missing in the netlist file')
             exit()
         elif end == -2:
-            print(f'Invalid circuit defination: {END} line is missing')
+            print(f'Invalid circuit defination: {END} line is missing in the netlist file')
             exit()
 
         # validating circuit block
@@ -60,16 +63,29 @@ try:
             print('Invalid circuit defination')
             exit(0)
 
+        ##################################################################################################
+
         # Parse each line of the circuit part and analyse the words(tokens)
         else:
-            line_number = start+1
+            ##### extracting circuit_defination between .start and .end
+            circuit_defination = []
             for line in lines[start+1:end]:
-                
-                line_number +=1
-                # extracting the tokens after ignoring the comments
-                tokens = line.split('#')[0].split()
+                circuit_defination.append(line)
 
-                # for resistor, inductor, conductor, independent voltage and current source
+            ##### removing comments from the circuit_defination
+            circuit_defination_no_comment = []
+            for line in circuit_defination:
+                circuit_defination_no_comment.append(line.split('#')[0])
+
+            
+            ##### Analyzing the tokens from the circuit_defination
+            for line in circuit_defination_no_comment:
+
+                line_number +=1
+                ### extracting the tokens
+                tokens = line.split()
+
+                ### for resistor, inductor, conductor, independent voltage and current source
                 if len(tokens)==4:
                     if tokens[0][0] == 'R':
                         element='Resistor'
@@ -95,9 +111,9 @@ try:
                         print(f'Line {line_number}: Node names should be alphanumeric')
                         continue
 
-                    print (f'Element:{element}, n1:{n1}, n2:{n2}, value:{tokens[3]}')
+                    print (f'Line {line_number}: Element:{element}, n1:{n1}, n2:{n2}, value:{tokens[3]}')
 
-                # for VCVS, VSCS
+                ### for VCVS, VSCS
                 elif len(tokens)==6:
                     if tokens[0][0] == 'E':
                         element='Voltage Controlled Voltage Source'
@@ -119,9 +135,9 @@ try:
                         print(f'Line {line_number}: Node names should be alphanumeric')
                         continue
 
-                    print (f'Element:{element}, n1:{n1}, n2:{n2}, n3:{n3}, n4:{n4}, value:{tokens[5]}')
+                    print (f'Line {line_number}: Element:{element}, n1:{n1}, n2:{n2}, n3:{n3}, n4:{n4}, value:{tokens[5]}')
 
-                # for CCVS, CCCS
+                ### for CCVS, CCCS
                 elif len(tokens)==5:
                     if tokens[0][0] == 'H':
                         element='Current Controlled Voltage Source'
@@ -149,7 +165,7 @@ try:
                         print(f'Line {line_number}: vname should be of the form V...')
                         continue
 
-                    print (f'Element:{element}, n1:{n1}, n2:{n2}, vname:{vname} value:{tokens[4]}')
+                    print (f'Line {line_number}: Element:{element}, n1:{n1}, n2:{n2}, vname:{vname} value:{tokens[4]}')
 
                 # if the tokens don't satisty the above conditions
                 # then it don't comes under circuit defination
@@ -158,8 +174,10 @@ try:
                     continue
 
 
+        ##################################################################################################
+
         # print out each line with words in reverse order.
-        print('Words in reverse order:') 
+        print('### Words in reverse order:') 
         for line in reversed(lines[start+1:end]):
             # in below code line.split('#')[0] ensures that comments are neglected
             for word in reversed(line.split('#')[0].split()):

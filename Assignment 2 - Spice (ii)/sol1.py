@@ -1,13 +1,12 @@
 
 """
         EE2703 Applied Programming Lab - 2019
-        Assignment 1
+        Assignment 2
         Name - Yogesh Agarwala
         Roll - EE19B130
 
-        To check the code run $python ee19b130_test1.py <inputfile>
+        To check the code run $python assign2_ee19b130.py <inputfile>
 """
-
 
 from sys import argv, exit
 
@@ -23,6 +22,16 @@ if len(argv) != 2:
     exit()
 
 
+
+class Component():
+    def __init__(self,name,node1,node2,value,element):
+        self.name = name
+        self.node1 = node1
+        self.node2 = node2
+        self.value = value
+        self.element = element
+
+
 # try-except is used to catch the error in case wrong filename is entered
 try:
     with open(argv[1]) as f:
@@ -31,8 +40,6 @@ try:
         lines = f.readlines()
         f.close()
 
-
-        ##################################################################################################
 
         # these values will be changed only if .ciruit and .end are found in the netlist file
         start = -1; end = -2
@@ -63,7 +70,6 @@ try:
             print('Invalid circuit defination')
             exit(0)
 
-        ##################################################################################################
 
         # Parse each line of the circuit part and analyse the words(tokens)
         else:
@@ -174,15 +180,6 @@ try:
                     continue
 
 
-        ##################################################################################################
-
-        # print out each line with words in reverse order.
-        print('### Words in reverse order:') 
-        for line in reversed(lines[start+1:end]):
-            # in below code line.split('#')[0] ensures that comments are neglected
-            for word in reversed(line.split('#')[0].split()):
-                print(word, end=' ')
-            print('\b')
 
 
 # if the file could not be found
