@@ -149,7 +149,7 @@ def parse_line(line):
         n2 = tokens[2]
         value = tokens[3]
         val = parse_val(value)
-
+        
         from_node_index,to_node_index = append(n1,n2)
 
         if(tokens[0][0] == 'R' or tokens[0][0] == 'C' or tokens[0][0] == 'L'):
