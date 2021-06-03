@@ -1,11 +1,11 @@
 
 """
-        EE2703 Applied Programming Lab - 2019
-        Assignment 2
-        Name - Yogesh Agarwala
-        Roll - EE19B130
+    EE2703 Applied Programming Lab - 2021
+    Assignment 2 - Spice(ii)
+    Name - Yogesh Agarwala
+    Roll - EE19B130
 
-        To check the code run $python assign2_ee19b130.py <inputfile>
+    To check the code run $python assign2_ee19b130.py <inputfile>
 """
 
 from sys import argv, exit

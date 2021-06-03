@@ -1,0 +1,338 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2021.3.4)  21 APR 2021 15:01
+entering extended mode
+**./main.tex
+(main.tex
+LaTeX2e <2020-10-01> patch level 2
+L3 programming layer <2020-10-27> xparse <2020-03-03>
+(D:\Softwares\Miktex\tex/latex/base\article.cls
+Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
+(D:\Softwares\Miktex\tex/latex/base\size10.clo
+File: size10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+)
+\c@part=\count175
+\c@section=\count176
+\c@subsection=\count177
+\c@subsubsection=\count178
+\c@paragraph=\count179
+\c@subparagraph=\count180
+\c@figure=\count181
+\c@table=\count182
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+(D:\Softwares\Miktex\tex/latex/base\inputenc.sty
+Package: inputenc 2020/08/01 v1.3d Input encoding file
+\inpenc@prehook=\toks15
+\inpenc@posthook=\toks16
+)
+(D:\Softwares\Miktex\tex/latex/natbib\natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip49
+\bibsep=\skip50
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count183
+)
+(D:\Softwares\Miktex\tex/latex/graphics\graphicx.sty
+Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+
+(D:\Softwares\Miktex\tex/latex/graphics\keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+(D:\Softwares\Miktex\tex/latex/graphics\graphics.sty
+Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+
+(D:\Softwares\Miktex\tex/latex/graphics\trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(D:\Softwares\Miktex\tex/latex/graphics-cfg\graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+(D:\Softwares\Miktex\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen139
+\Gin@req@width=\dimen140
+)
+(D:\Softwares\Miktex\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2020/09/23 v2.17i AMS math features
+\@mathmargin=\skip51
+
+For additional information on amsmath, use the `?' option.
+(D:\Softwares\Miktex\tex/latex/amsmath\amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(D:\Softwares\Miktex\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks18
+\ex@=\dimen141
+))
+(D:\Softwares\Miktex\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen142
+)
+(D:\Softwares\Miktex\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count184
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count185
+\leftroot@=\count186
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count187
+\DOTSCASE@=\count188
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box47
+\strutbox@=\box48
+\big@size=\dimen143
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count189
+\c@MaxMatrixCols=\count190
+\dotsspace@=\muskip16
+\c@parentequation=\count191
+\dspbrk@lvl=\count192
+\tag@help=\toks19
+\row@=\count193
+\column@=\count194
+\maxfields@=\count195
+\andhelp@=\toks20
+\eqnshift@=\dimen144
+\alignsep@=\dimen145
+\tagshift@=\dimen146
+\tagwidth@=\dimen147
+\totwidth@=\dimen148
+\lineht@=\dimen149
+\@envbody=\toks21
+\multlinegap=\skip52
+\multlinetaggap=\skip53
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2923.
+LaTeX Info: Redefining \] on input line 2924.
+)
+(D:\Softwares\Miktex\tex/latex/listings\listings.sty
+\lst@mode=\count196
+\lst@gtempboxa=\box49
+\lst@token=\toks23
+\lst@length=\count197
+\lst@currlwidth=\dimen150
+\lst@column=\count198
+\lst@pos=\count199
+\lst@lostspace=\dimen151
+\lst@width=\dimen152
+\lst@newlines=\count266
+\lst@lineno=\count267
+\lst@maxwidth=\dimen153
+
+(D:\Softwares\Miktex\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count268
+\lst@skipnumbers=\count269
+\lst@framebox=\box50
+)
+(D:\Softwares\Miktex\tex/latex/listings\listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+
+(D:\Softwares\Miktex\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
+\l__kernel_color_stack_int=\count270
+\l__pdf_internal_box=\box51
+) (main.aux
+
+LaTeX Warning: Label `lst:code_direct' multiply defined.
+
+
+LaTeX Warning: Label `lst:code_direct' multiply defined.
+
+
+LaTeX Warning: Label `lst:code_direct' multiply defined.
+
+
+LaTeX Warning: Label `lst:code_direct' multiply defined.
+
+
+LaTeX Warning: Label `fig:Coupled Oscillations' multiply defined.
+
+
+LaTeX Warning: Label `lst:code_direct' multiply defined.
+
+
+LaTeX Warning: Label `fig:Coupled Oscillations' multiply defined.
+
+
+LaTeX Warning: Label `fig:Coupled Oscillations' multiply defined.
+
+)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+ (D:\Softwares\Miktex\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count271
+\scratchdimen=\dimen154
+\scratchbox=\box52
+\nofMPsegments=\count272
+\nofMParguments=\count273
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count274
+\MPscratchDim=\dimen155
+\MPnumerator=\count275
+\makeMPintoPDFobject=\count276
+\everyMPtoPDFconversion=\toks25
+) (D:\Softwares\Miktex\tex/latex/epstopdf-pkg\epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+)
+\c@lstlisting=\count277
+
+(D:\Softwares\Miktex\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+<Figure_0.png, id=1, 462.528pt x 346.896pt>
+File: Figure_0.png Graphic file (type png)
+<use Figure_0.png>
+Package pdftex.def Info: Figure_0.png  used on input line 55.
+(pdftex.def)             Requested size: 240.51593pt x 180.38695pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[1
+
+{C:/Users/yoges/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
+<Figure_1.png, id=16, 462.528pt x 346.896pt>
+File: Figure_1.png Graphic file (type png)
+<use Figure_1.png>
+Package pdftex.def Info: Figure_1.png  used on input line 75.
+(pdftex.def)             Requested size: 240.51593pt x 180.38695pt.
+
+Overfull \hbox (0.35545pt too wide) in paragraph at lines 81--81
+[]\OT1/cmr/bx/n/12 LTI re-sponse over dif-fer-ent fre-quen-cies of ap-plied for
+ce 
+ []
+
+[2 <./Figure_0.png> <./Figure_1.png>]
+Overfull \hbox (12.0079pt too wide) in paragraph at lines 89--90
+[][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+<Figure_2.png, id=22, 462.528pt x 346.896pt>
+File: Figure_2.png Graphic file (type png)
+<use Figure_2.png>
+Package pdftex.def Info: Figure_2.png  used on input line 105.
+(pdftex.def)             Requested size: 277.51894pt x 208.13919pt.
+[3 <./Figure_2.png>]
+<Figure_3.png, id=28, 462.528pt x 346.896pt>
+File: Figure_3.png Graphic file (type png)
+<use Figure_3.png>
+Package pdftex.def Info: Figure_3.png  used on input line 144.
+(pdftex.def)             Requested size: 254.39117pt x 190.79338pt.
+ [4
+
+ <./Figure_3.png>]
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 1
+60.
+
+(D:\Softwares\Miktex\tex/latex/base\omscmr.fd
+File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 160.
+<Figure_4.png, id=34, 462.528pt x 346.896pt>
+File: Figure_4.png Graphic file (type png)
+<use Figure_4.png>
+Package pdftex.def Info: Figure_4.png  used on input line 173.
+(pdftex.def)             Requested size: 277.51894pt x 208.13919pt.
+ [5
+
+ <./Figure_4.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 182--183
+
+ []
+
+
+Overfull \hbox (32.40836pt too wide) in paragraph at lines 195--196
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+LaTeX Font Info:    Trying to load font information for OML+cmr on input line 2
+00.
+(D:\Softwares\Miktex\tex/latex/base\omlcmr.fd
+File: omlcmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <8> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 200.
+
+Overfull \hbox (22.20813pt too wide) in paragraph at lines 200--202
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+] 
+ []
+
+<Figure_5.png, id=40, 462.528pt x 346.896pt>
+File: Figure_5.png Graphic file (type png)
+<use Figure_5.png>
+Package pdftex.def Info: Figure_5.png  used on input line 207.
+(pdftex.def)             Requested size: 277.51894pt x 208.13919pt.
+<Figure_6.png, id=41, 462.528pt x 346.896pt>
+File: Figure_6.png Graphic file (type png)
+<use Figure_6.png>
+Package pdftex.def Info: Figure_6.png  used on input line 213.
+(pdftex.def)             Requested size: 277.51894pt x 208.13919pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[6
+
+ <./Figure_5.png>] [7 <./Figure_6.png>] [8] (main.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 4100 strings out of 479798
+ 54420 string characters out of 2881506
+ 537277 words of memory out of 3000000
+ 21081 multiletter control sequences out of 15000+200000
+ 541496 words of font info for 51 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 66i,7n,72p,381b,1623s stack positions out of 5000i,500n,10000p,200000b,50000s
+{D:/Softwares/Miktex/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<D:/Softwares/
+Miktex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/Softwares/Miktex/fonts/typ
+e1/public/amsfonts/cm/cmbx8.pfb><D:/Softwares/Miktex/fonts/type1/public/amsfont
+s/cm/cmmi10.pfb><D:/Softwares/Miktex/fonts/type1/public/amsfonts/cm/cmmi7.pfb><
+D:/Softwares/Miktex/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/Softwares/Mikt
+ex/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Softwares/Miktex/fonts/type1/pu
+blic/amsfonts/cm/cmr12.pfb><D:/Softwares/Miktex/fonts/type1/public/amsfonts/cm/
+cmr17.pfb><D:/Softwares/Miktex/fonts/type1/public/amsfonts/cm/cmr7.pfb><D:/Soft
+wares/Miktex/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Softwares/Miktex/fonts
+/type1/public/amsfonts/cm/cmsy10.pfb><D:/Softwares/Miktex/fonts/type1/public/am
+sfonts/cm/cmsy8.pfb><D:/Softwares/Miktex/fonts/type1/public/amsfonts/cm/cmti8.p
+fb><D:/Softwares/Miktex/fonts/type1/public/cm-super/sfrm0800.pfb><D:/Softwares/
+Miktex/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on main.pdf (8 pages, 632669 bytes).
+PDF statistics:
+ 105 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+

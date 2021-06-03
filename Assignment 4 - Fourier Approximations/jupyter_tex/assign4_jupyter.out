@@ -1,0 +1,15 @@
+\BOOKMARK [2][-]{subsection.0.1}{Assignment 4: Fourier Approximations}{}% 1
+\BOOKMARK [2][-]{subsection.0.2}{Q1. Defining Functions}{}% 2
+\BOOKMARK [2][-]{subsection.0.3}{Function Plots}{}% 3
+\BOOKMARK [2][-]{subsection.0.4}{Q2. Finding the Fourier series coefficients: Integration approach}{}% 4
+\BOOKMARK [2][-]{subsection.0.5}{Q3. Semilog and Loglog plot for both functions}{}% 5
+\BOOKMARK [3][-]{subsubsection.0.5.1}{\(a\) For e\136x}{subsection.0.5}% 6
+\BOOKMARK [3][-]{subsubsection.0.5.2}{\(b\) For cos\(cos\(x\)\)}{subsection.0.5}% 7
+\BOOKMARK [2][-]{subsection.0.6}{Q4. Finding the Fourier series coefficients: Least Squares approach}{}% 8
+\BOOKMARK [3][-]{subsubsection.0.6.1}{Q5. Plots comparing the coefficients by ``Integration'' and ``Least Square'' approaches}{subsection.0.6}% 9
+\BOOKMARK [3][-]{subsubsection.0.6.2}{\(a\) For e\136x}{subsection.0.6}% 10
+\BOOKMARK [3][-]{subsubsection.0.6.3}{\(b\) For cos\(cos\(x\)\)}{subsection.0.6}% 11
+\BOOKMARK [2][-]{subsection.0.7}{Q6. Calculating the deviation b/w Least square and direct integration cofficients}{}% 12
+\BOOKMARK [3][-]{subsubsection.0.7.1}{Q7. Plots compare the function values obtained by the ``least squares'' method with the ``true'' value}{subsection.0.7}% 13
+\BOOKMARK [3][-]{subsubsection.0.7.2}{\(a\) For e\136x}{subsection.0.7}% 14
+\BOOKMARK [3][-]{subsubsection.0.7.3}{\(b\) For cos\(cos\(x\)\)}{subsection.0.7}% 15

@@ -1,6 +1,6 @@
 """
-        EE2703 Applied Programming Lab - 2019
-            Assignment 1: Sample solution
+        EE2703 Applied Programming Lab - 2021
+        Assignment 1: Sample solution
 """
 
 from sys import argv, exit
