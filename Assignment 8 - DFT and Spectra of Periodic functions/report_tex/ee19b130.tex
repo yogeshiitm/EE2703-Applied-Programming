@@ -48,14 +48,14 @@ sin(5t) = 0.5(\frac{e^{5t}}{j}-\frac{e^{-5t}}{j})
 \end{equation}
 \begin{figure}[h!]
 \centering
-\includegraphics[scale=0.6]{fig9-1.png}
+\includegraphics[scale=0.6]{Figure_1.png}
 \caption{Spectrum of sin(5t) without Phase wrapping}
 \label{fig:universe}
 \end{figure}
 
 \begin{figure}[h!]
 \centering
-\includegraphics[scale=0.6]{fig9-2.png}
+\includegraphics[scale=0.6]{Figure_2.png}
 \caption{Spectrum of sin(5t) after phase wrapping}
 \label{fig:universe}
 \end{figure}
@@ -72,14 +72,14 @@ We note that 2 of the peaks have merged, we need to increase the number of sampl
 
 \begin{figure}[h!]
 \centering
-\includegraphics[scale=0.55]{fig9-3.png}
+\includegraphics[scale=0.55]{Figure_3.png}
 \caption{Spectrum of $(1+0.1\cos(t))\cos(10t)$ with low number of samples}
 \label{fig:universe}
 \end{figure}
 
 \begin{figure}[h!]
 \centering
-\includegraphics[scale=0.55]{fig9-4.png}
+\includegraphics[scale=0.55]{Figure_4.png}
 \caption{Spectrum of $(1+0.1\cos(t))\cos(10t)$ with a higher number of samples}
 \label{fig:universe}
 \end{figure}
@@ -90,7 +90,7 @@ $\sin^3(t) = \frac{3}{4}\sin(t) - \frac{1}{4}\sin(3t)$\newline
 We expect 2 peaks at frequencies 1 and 3, and phases similar to that expected from a sum of sinusoids.
 \begin{figure}[h!]
 \centering
-\includegraphics[scale=0.5]{fig9-5.png}
+\includegraphics[scale=0.5]{Figure_5.png}
 \caption{Spectrum of $sin^3(t)$}
 \label{fig:universe}
 \end{figure}
@@ -99,7 +99,7 @@ We expect 2 peaks at frequencies 1 and 3, and phases similar to that expected fr
 We expect 2 peaks at frequencies 1 and 3, and phase=0 at the peaks.
 \begin{figure}[h!]
 \centering
-\includegraphics[scale=0.5]{fig9-6.png}
+\includegraphics[scale=0.5]{Figure_6.png}
 \caption{Spectrum of $cos^3(t)$}
 \label{fig:universe}
 \end{figure}
@@ -108,7 +108,7 @@ We expect 2 peaks at frequencies 1 and 3, and phase=0 at the peaks.
 The number of peaks has clearly increased. The energy in the side bands is comparable to that of the main signal.
 \begin{figure}[h!]
 \centering
-\includegraphics[scale=0.6]{fig9-7.png}
+\includegraphics[scale=0.6]{Figure_7.png}
 \caption{Spectrum of $cos(20t +5 \cos(t))$}
 \label{fig:universe}
 \end{figure}
@@ -130,14 +130,14 @@ X(j \omega) = \frac{1}{\sqrt{2 \pi}}e^{\frac{-\omega^2}{2}}
 
 \begin{figure}[h!]
 \centering
-\includegraphics[scale=0.6]{gaussest.png}
+\includegraphics[scale=0.6]{Figure_8.png}
 \caption{Estimated CTFT of Gaussian}
 \label{fig:universe}
 \end{figure}
 
 \begin{figure}[h!]
 \centering
-\includegraphics[scale=0.6]{gaussreal.png}
+\includegraphics[scale=0.6]{Figure_9.png}
 \caption{Expected CTFT of Gaussian}
 \label{fig:universe}
 \end{figure}
@@ -154,15 +154,14 @@ The summation of the absolute values of the error = 1.472553842671434e-14\newlin
 \item The numpy.fft library on a random signal gives satisfactorily low error in the reconstructed signal.
 	
 \item There are multiple issues that need to be fixed in spectrum of sin(5t):
-\begin{itemize}
-• The peaks are not where we expect them to be. This can be corrected
-using fft shift.\\
-• The spikes have a height of 64, not 0.5. This should be rectified by
-dividing by the sample rate.\\
-• The frequency axis is not in place. This is due to the duplicacy of 0
-and 2$\pi$.\\
-• The actual phase at the spikes is near but not exactly correct.
-\end{itemize}
+
+	• The peaks are not where we expect them to be. This can be corrected
+	using fft shift.\\
+	• The spikes have a height of 64, not 0.5. This should be rectified by
+	dividing by the sample rate.\\
+	• The frequency axis is not in place. This is due to the duplicacy of 0
+	and 2$\pi$.\\
+	• The actual phase at the spikes is near but not exactly correct.
 
 \item In AM modulated signal, in order to see even the side peaks, the frequency resolution has to be improved. We can do so by keeping the number of samples constant and increasing the range in the time domain.
 
